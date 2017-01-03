@@ -1,6 +1,5 @@
 setwd("C:/Users/Abhay Bhat/Documents/Personal/Titanic")
 
-library(randomForest)
 library(caret)
 
 trainingSet <- read.csv("train.csv")
@@ -15,9 +14,6 @@ table(trainingSet$Pclass)
 trainingSet$Survived <- as.factor(trainingSet$Survived)
 trainingSet$Pclass <- as.factor(trainingSet$Pclass)
 plot(trainingSet$Pclass, trainingSet$Survived)
-
-# - Extracting 3rd class passengers 
-trainingSet$thirdClass <- ifelse(trainingSet$Pclass=="3",1,0)
 
 # --- Exploring featues ---
 summary(trainingSet$Sex)
