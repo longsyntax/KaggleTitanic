@@ -1,5 +1,7 @@
 # KaggleTitanic
-Latest submission of the Kaggle competition to predict Titanic survivors. Code is in R, using the caret library. 
+Latest submission of the Kaggle competition to predict Titanic survivors. 
+
+Code is in R, using the caret library. 
 
 # Features Used/Improvements Made based on the training set
 Replaced possibly erronous values where Fare = 0 with median values of the Fares for the corresponding Pclass
